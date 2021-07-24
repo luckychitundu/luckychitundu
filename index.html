@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head><title>Chitundu Lucky</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+<style>
+    
+    /*---------------------------------------------------------ACCOMPANYING CSS----------------------------------------------------------*/
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+        
+    }
+
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+        
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('pics/IMG-20210220-WA0007_2.jpg');
+        min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("pics/mic.jpg");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("pics/photo.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+
+        
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+            overflow: hidden;
+        }   
+    }
+    
+    
+    
+</style>
+
+</head>
+    
+    
+<body>
+<!------------------------------------------------------HEADER------------------------------------------------------------------------->
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">CHITUNDU</span> LUCKY</span>
+        </div>
+    </div>
+
+    
+    <!---------------------------------------------------------ABOUT SECTION---------------------------------------------------------------->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>I love music</em></p>
+        <p>I was introduced to the art of music at an early age, and I am grateful for that. From the keyboard to the guitar to the drums, music has taught me more than just mere harmony. It is love in search for a word! Captivated by it’s beauty, I have set out to learn and appreciate what it has to offer.<br>I am therefore armored with the necessary skill and sagacity to grace various music ventures. In the words of Aleigh Miller, music makes you strong; it makes you fearless; it can make you a star. Music to me is when you see who you really are.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Chitundu Lucky</b></p><br>
+                <img src="pics/PXL_20210118_034445948_3.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices, okay it's fine -->
+            <div >
+                <p>Besides that, I am a mathematician with a concentration in Calculus and Algebra. Over the past years, I have participated in various Mathematics Olympiads, at local and national level, emerging victorious. I was also privileged to earn a certificate of distinction in the <a href="https://www.amt.edu.au/" target="_blank" class="w3-hover-text-blue">Australian Math Trust</a> Competition, 2017.  However, I am still learning, and anticipating for greater exploits. I will be willing and happy to assist those having difficulties understanding one or two concepts in Math and/or Physics.<br> 
+<br>One more thing, before I forget! I am an individual with a mind that is open to business insights and innovations. I have learned some technical skills like financial risk management and investment banking through diversity discovery programs from various companies including <a href="https://www.citi.com/" target="_blank" class="w3-hover-text-blue">Citi bank.</a>
+.</p>
+            </div>
+        </div>
+        <p class="w3-large w3-center w3-padding-16">Im good at:</p>
+        <p class="w3-wide"><i class="fa fa-camera"></i>Music</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Mathematics</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo"></i>Business</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">5+</span><br>
+            Partners
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">30+</span><br>
+            Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">80+</span><br>
+            Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">100+</span><br>
+            Meetings
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    
+    <!----------------------------------------------------------- PORTFOLIO ---------------------------------------------------------->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center"><em>Here are some of my gifts represented by images<br> Click on the images to make
+                them bigger, and unveil the details behind them</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="pics/tmp_image_0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I enjoy solving problems in Math and Physics">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="pics/download%20(1)%20bass.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I play the bass guitar">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="pics/Blue-Plus-D-SW-3-400x300.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I play the acoustic guitar">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="pics/drum.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I play drums too">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="pics/rhode.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I love singing">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="pics/keyboard.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My favourite instrument. I play the keyboard everytime I can">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="pics/Photoshop%20400x300.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I enjoy  philosophy too">
+            </div>
+
+            <div class="w3-col m3">
+                
+                    <img src="pics/download.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Am always gazing upon the beauty of nature.">
+            </div>
+            <a href="#portfolio"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button></a>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    
+    <!----------------------------------------------------------- CONTACT SECTION ------------------------------------------------------->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">REACH OUT TO ME</h3>
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="pics/location.jpg" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>United States<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (470) 731 0903
+                  <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    luckyconschitundu@gmail.com<br>
+                </div>
+                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                 <form action="https://formspree.io/f/moqynokq" method="POST">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="_replyto">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit" name="submit" value="send">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <!------------------------------------------------------------ FOOTER ------------------------------------------------------------->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/lucky.chitundu" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/luckyconstantchitundu/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/lucky-chitundu/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <p class="w3-hover-text-green"><strong>Site by Lucky. Constant Reigns.  All Rights Reserved</strong></p>
+        
+    </footer>
+    
+
+    <!------------------------------------------------------------JAVASCRIPT--------------------------------------------------------------->
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        
+         window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+    </script>
+
+</body>
+    
+</html>
